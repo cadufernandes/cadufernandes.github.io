@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Post: 12/03/2014</title>
+</head>
+
+<body>
+<article>
+	12/03/2014 </br>
+Configurando Github no windows
+</br>
+Programas utilizados:<br />
+<br />
+-Sublime(editor de texto):<br />
+http://www.sublimetext.com/<br />
+-Gitbash(conexão com github)<br />
+http://git-scm.com/downloads<br />
+</br>
+Site visitados:<br />
+-https://github.com/<br />
+<br />
+Instalação do Gitbash:<br />
+<br />
+Instalação é fácil, pois não utilizaremos nenhum configuração diferenciada, iremos utilizar a instalação padrão.<br />
+Execute o programa<br />
+em seguida na tela de componentes deixei a configuração default, depois NEXT<br />
+Na tela de configuração "Path environment" também mantenha a opção default "Use Git Bash only", caso deseja utilizar outras opções, <br />
+leia-as com atenção e escolha como quiser, depois NEXT<br />
+Na próxima tela, escolha a primeira opção: Checkout Windows..., NEXT novamente.<br />
+depois é só concluir.<br />
+<br />
+Configuração do Gitbash: <br />
+<br />
+Abra o GitBash e digite:<br />
+<br />
+Entre com esses codigos para configurar o Usuario e o emails que será configurado.<br />
+$ git config --global user.name "Nome Completo"<br />
+$ git config --global user.email "email@domain.com"<br />
+<br />
+Gerar SSH:<br />
+<br />
+Criar as chaves publica e privada:<br />
+Comando: ssh-keygen -t rsa -C "your_email@domain.com"<br />
+<br />
+Depois acesse o site do github, efetue o login, depois clique em opções/Settings, clique em SSH Keys e em seguida Add SSH Key.<br />
+No arquivo gerado pelo prompt, pegue a chave gerada no conteudo do mesmo e copie no campo KEY do site depois clique em Add Key.<br />
+Para verificar se funcionou digite no prompt:<br />
+ssh -T git@github.com (usar o email q vc cadastrou)<br />
+<br />
+Comandos importantes:<br />
+<br />
+Git Status: veirifa a situação dos codigos, quais foram upados no site e quais não.<br />
+Git add <arquivo>: adiciona o arquivo para upar.<br />
+Git commit -m "<mensagem>": comita o arquivo no site e cria uma mensagem de identificação<br />
+<br />
+</article>
+</body>
+</html>
